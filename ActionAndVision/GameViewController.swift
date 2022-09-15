@@ -14,7 +14,7 @@ import UIKit
 import AVFoundation
 import Vision
 var ThrowAngle = 0.0
-var HumanHight = 170.0
+var HumanHight = 172.0
 var ThrowNumber = 0
 var avgHeightArrayValueGameManager = 0.0
 var poseObservations2 = [VNTrajectoryObservation]()
@@ -328,7 +328,9 @@ class GameViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                 let yDistC = (rightKnee.y - rightHip.y)
                 let c = sqrt((xDistC * xDistC) + (yDistC * yDistC))
 
-            KnieWinkel = (((acos(((a*a)+(c*c)-(b*b))/((2*(a)*(c)))))*(180))/(3.14159))
+            //KnieWinkel = (((acos(((a*a)+(c*c)-(b*b))/((2*(a)*(c)))))*(180))/(3.14159))
+            KnieWinkel = acos(((a*a)+(c*c)-(b*b))/(2*a*c))
+            KnieWinkel=KnieWinkel * 180/3.14159
             //KnieWinkel = KnieWinkel*100
             KnieWinkel = round(KnieWinkel)
             //KnieWinkel = KnieWinkel/100
@@ -343,14 +345,17 @@ class GameViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
             ArrKniewinkel.append(KnieWinkel)
             print("Count: ", ArrKniewinkel.count)
             
-            if (ArrKniewinkel.count == 937){
+            let frames = 633
+            
+            if (ArrKniewinkel.count == frames){
             print("Test Array: ", ArrKniewinkel)
                 
-                for i in 1...936 {
+                for i in 1...frames-1 {
                     //let str = ArrKniewinkel.description[i]
                     let string = String(format: "%.2f", ArrKniewinkel[i])
                     stringArray.append(string)
                 }
+             
                 /*
                 print("Test StringArray: ", stringArray)
                 

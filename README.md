@@ -4,13 +4,9 @@ Detect and classify human activity in real time using computer vision and machin
 ## Overview
 The Action & Vision sample app leverages several new capabilities available in Vision and Core ML in iOS 14. The app provides an example of how you can use these technologies together, to help players improve their bean-bag tossing performance.
 
-![A diagram of a human figure tossing a bean bag toward a board with a small opening. Above the figure is a running score tally, and below are elements that display the player's throw type, trajectory, and speed, and their score for each throw.][image-1]
-
 - Note: This sample code project is associated with the WWDC20 session: [10099: Explore the Action & Vision App][1].
 
 The app analyzes player performance in a game of Bean Bag Toss. In this easy-to-learn game, you throw bean bags at 4 x 2 foot board that has a 6-inch hole in one end. You stand 25 feet away from the center hole of the board, and score points if you toss the bean bag onto the board, and score additional points if it goes through the hole. To make gameplay more interesting, the app adds a style dimension to the scoring. It analyzes your throw and adds additional points based on your throw style, including overhand, underhand, or underleg. 
-
-![A diagram of the dimensions of the Bean Bag Toss game. A human figure stands 25 feet from a 2 x 4 foot board. A dotted line indicates the movement of a bean bag tossed toward a 6 inch opening in the board.][image-2]
 
 After each throw, the app also provides real-time feedback that indicates your throw’s type, speed, and trajectory, along with your score. 
 
@@ -19,15 +15,6 @@ After each throw, the app also provides real-time feedback that indicates your t
 You must run the sample app on a physical device with an A12 processor or later, running iOS 14.
 
 Some Vision algorithms require a stable scene with a fixed camera position and stationary background. To analyze your own gameplay, mount your iOS device to a tripod and keep it fixed on the field of play. Alternatively, try the app by downloading and analyzing [a pre-recorded video][2] of a Bean Bag Toss athlete in action.
-
-
-## Analyze the Field of Play
-Before gameplay can begin, the app analyzes the scene to find the location of the gameboard. It detects its location by using an instance of [VNCoreMLRequest][3] to run inference on a custom object-detection model created using [Create ML][4]. The app has a model trained using photos of gameboards, taken from various angles and distances, in both indoor and outdoor environments. To further improve the model’s accuracy, they also trained it using images with people in the frame, and bean bags on and around the board. The app performs the request and retrieves its top observation to find the gameboard’s bounding rectangle.
-
-
-Next, the app performs a [VNDetectContoursRequest][5] to detect the contours of the gameboard’s edges and uses them to determine the normalized pixel dimensions of the board, and the location of the hole. Because the app previously calculated the bounding rectangle of the detected board, it sets the bounding rectangle as the request’s region of interest, which helps the request significantly reduce noise and improve performance. Because the app knows the real-world size of the gameboard, it accurately determines the pixel dimensions of the field of play.
-
-To learn more about about contour detection, see the WWDC20 session, [10673: Explore Computer Vision APIs][6].
 
 ## Determine Scene Stability
 Some Vision algorithm’s require a stable scene to produce accurate results. To determine scene stability, the app uses [VNTranslationalImageRegistrationRequest][7], a request that compares two images to calculate the x-axis and y-axis shift between them. The app analyzes video frames until the shift reaches a minimum difference threshold, at which point the app considers the scene stable.
@@ -72,6 +59,3 @@ To learn more about Action Classification, see [Create ML][15].
 [13]:	https://developer.apple.com/documentation/vision/vndetecthumanbodyposerequest "A link to the VNDetectHumanBodyPoseRequest API documentation."
 [14]:	https://developer.apple.com/documentation/coreml/mlmultiarray "A link to the MLMultiArray API documentation."
 [15]:	https://developer.apple.com/documentation/createml "A link to the Create ML technology page."
-
-[image-1]:	Documentation/gamescreen.png
-[image-2]:	Documentation/dimensions.png

@@ -34,7 +34,7 @@ class RootViewController: UIViewController {
             overlayParentView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0),
             overlayParentView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0),
             overlayParentView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
-            overlayParentView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
+            overlayParentView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 49)
         ])
         
         startObservingStateChanges()
@@ -45,8 +45,19 @@ class RootViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         gameManager.stateMachine.enter(GameManager.SetupCameraState.self)
+        
+        /*
+        if let indeedTabBarController = self.tabBarController {
+            let buttonHeight: CGFloat = view.safeAreaInsets.bottom + 44
+            let buttonWidth = UIScreen.main.bounds.width
+            let frame = CGRect(x: 0, y: UIScreen.main.bounds.height - buttonHeight, width: buttonWidth, height: 44)
+            let vw = UIView(frame: frame)
+            vw.backgroundColor = .white
+            indeedTabBarController.view.addSubview(vw)
+          }
+         */
     }
-    
+
     private func presentOverlayViewController(_ newOverlayViewController: UIViewController?, completion: (() -> Void)?) {
         defer {
             completion?()

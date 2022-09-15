@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C050CC5286D76390037BF14 /* SummaryViewControllerKnee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C050CC4286D76390037BF14 /* SummaryViewControllerKnee.swift */; };
+		5C050CC7286D764B0037BF14 /* SummaryViewControllerHip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C050CC6286D764B0037BF14 /* SummaryViewControllerHip.swift */; };
+		5C78374D286DB1D70017FFEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C78374C286DB1D70017FFEA /* Assets.xcassets */; };
+		5C99C63E2876F304002E38EB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C99C63D2876F304002E38EB /* TabBarController.swift */; };
+		5CE1C2AD286517080090A96D /* SummaryViewController2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE1C2AC286517080090A96D /* SummaryViewController2.storyboard */; };
+		5CE1C2AF2865175E0090A96D /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1C2AE2865175E0090A96D /* SummaryViewController.swift */; };
+		5CE1C2B5286520670090A96D /* SummaryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE1C2B4286520670090A96D /* SummaryViewController.storyboard */; };
+		5CE1C2B728652DA60090A96D /* Assets1.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE1C2B628652DA60090A96D /* Assets1.xcassets */; };
 		5F1EC07823EC9EA100E35618 /* SetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F1EC07723EC9EA100E35618 /* SetupViewController.xib */; };
 		5F1EC07A23EC9F8400E35618 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1EC07923EC9F8400E35618 /* SetupViewController.swift */; };
 		5F24EFD624756AD400EA0CBA /* GameBoardDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5F24EFD524756AD400EA0CBA /* GameBoardDetector.mlmodel */; };
@@ -27,18 +35,39 @@
 		DF3EC82F23D65E340007EAE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3EC82E23D65E340007EAE9 /* SceneDelegate.swift */; };
 		DF3EC83123D65E340007EAE9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3EC83023D65E340007EAE9 /* CameraViewController.swift */; };
 		DF3EC83423D65E340007EAE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF3EC83223D65E340007EAE9 /* Main.storyboard */; };
-		DF3EC83923D65E390007EAE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3EC83823D65E390007EAE9 /* Assets.xcassets */; };
 		DF3EC83C23D65E390007EAE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF3EC83A23D65E390007EAE9 /* LaunchScreen.storyboard */; };
 		DF3EC84623D669FD0007EAE9 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3EC84423D669FD0007EAE9 /* GameViewController.xib */; };
 		DF3EC84723D669FD0007EAE9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3EC84523D669FD0007EAE9 /* GameViewController.swift */; };
-		DF907A5624161D2A00AE0814 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF907A5424161D2A00AE0814 /* SummaryViewController.swift */; };
-		DF907A5724161D2A00AE0814 /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF907A5524161D2A00AE0814 /* SummaryViewController.xib */; };
+		DF907A5624161D2A00AE0814 /* SummaryViewController_Original.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF907A5424161D2A00AE0814 /* SummaryViewController_Original.swift */; };
+		DF907A5724161D2A00AE0814 /* SummaryViewController_Original.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF907A5524161D2A00AE0814 /* SummaryViewController_Original.xib */; };
 		DFC5C176249839F900392F58 /* PlayerActionClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DFC5C175249839F900392F58 /* PlayerActionClassifier.mlmodel */; };
+		FE20F3083E09A0BEC3F47665 /* Pods_ActionAndVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45E8518F66F06A8E9AB8EA6 /* Pods_ActionAndVision.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5C050CC3286CE07D0037BF14 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3183710E5D5C4772C3D49B35 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		3326747FA736402EFA195489 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5C050CC4286D76390037BF14 /* SummaryViewControllerKnee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewControllerKnee.swift; sourceTree = "<group>"; };
+		5C050CC6286D764B0037BF14 /* SummaryViewControllerHip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewControllerHip.swift; sourceTree = "<group>"; };
+		5C78374C286DB1D70017FFEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C99C63D2876F304002E38EB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		5CE1C2AC286517080090A96D /* SummaryViewController2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SummaryViewController2.storyboard; sourceTree = "<group>"; };
+		5CE1C2AE2865175E0090A96D /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		5CE1C2B4286520670090A96D /* SummaryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SummaryViewController.storyboard; sourceTree = "<group>"; };
+		5CE1C2B628652DA60090A96D /* Assets1.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets1.xcassets; path = "../../../Downloads/AppIcons-2/Assets1.xcassets"; sourceTree = "<group>"; };
 		5F1EC07723EC9EA100E35618 /* SetupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetupViewController.xib; sourceTree = "<group>"; };
 		5F1EC07923EC9F8400E35618 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		5F24EFD524756AD400EA0CBA /* GameBoardDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GameBoardDetector.mlmodel; sourceTree = "<group>"; };
@@ -54,20 +83,22 @@
 		5FD9A16823ED9DE5004A8F31 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		5FF06752243E619E0021D743 /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
 		5FF06754243E88EF0021D743 /* SourcePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcePickerViewController.swift; sourceTree = "<group>"; };
+		720533FEBB32754631A6E869 /* Pods-ActionAndVision.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionAndVision.release.xcconfig"; path = "Target Support Files/Pods-ActionAndVision/Pods-ActionAndVision.release.xcconfig"; sourceTree = "<group>"; };
+		953ABCA96565E5208AB0B641 /* Pods-ActionAndVision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionAndVision.debug.xcconfig"; path = "Target Support Files/Pods-ActionAndVision/Pods-ActionAndVision.debug.xcconfig"; sourceTree = "<group>"; };
 		B222C85AFC0A20F716D652A4 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		C45E8518F66F06A8E9AB8EA6 /* Pods_ActionAndVision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActionAndVision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1A92A523E7575A00A9FD49 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		DF3EC82923D65E340007EAE9 /* ActionAndVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActionAndVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3EC82C23D65E340007EAE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF3EC82E23D65E340007EAE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DF3EC83023D65E340007EAE9 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		DF3EC83323D65E340007EAE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DF3EC83823D65E390007EAE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF3EC83B23D65E390007EAE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF3EC83D23D65E390007EAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF3EC84423D669FD0007EAE9 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		DF3EC84523D669FD0007EAE9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		DF907A5424161D2A00AE0814 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
-		DF907A5524161D2A00AE0814 /* SummaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryViewController.xib; sourceTree = "<group>"; };
+		DF907A5424161D2A00AE0814 /* SummaryViewController_Original.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController_Original.swift; sourceTree = "<group>"; };
+		DF907A5524161D2A00AE0814 /* SummaryViewController_Original.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryViewController_Original.xib; sourceTree = "<group>"; };
 		DFC5C175249839F900392F58 /* PlayerActionClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PlayerActionClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE20F3083E09A0BEC3F47665 /* Pods_ActionAndVision.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +145,23 @@
 			path = LICENSE;
 			sourceTree = "<group>";
 		};
+		91C3C428D983AB7C9E5FEF2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				953ABCA96565E5208AB0B641 /* Pods-ActionAndVision.debug.xcconfig */,
+				720533FEBB32754631A6E869 /* Pods-ActionAndVision.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B93B289B6D27C468C353F925 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C45E8518F66F06A8E9AB8EA6 /* Pods_ActionAndVision.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DF3EC82023D65E340007EAE9 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +170,8 @@
 				DF3EC82A23D65E340007EAE9 /* Products */,
 				6A13FA485FAEFF152406D173 /* Configuration */,
 				7DB1CD37EDE68F52C0DF647A /* LICENSE */,
+				91C3C428D983AB7C9E5FEF2C /* Pods */,
+				B93B289B6D27C468C353F925 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,15 +194,22 @@
 				DF3EC83023D65E340007EAE9 /* CameraViewController.swift */,
 				5F1EC07923EC9F8400E35618 /* SetupViewController.swift */,
 				DF3EC84523D669FD0007EAE9 /* GameViewController.swift */,
-				DF907A5424161D2A00AE0814 /* SummaryViewController.swift */,
 				DF1A92A523E7575A00A9FD49 /* Common.swift */,
+				DF907A5424161D2A00AE0814 /* SummaryViewController_Original.swift */,
+				5CE1C2AE2865175E0090A96D /* SummaryViewController.swift */,
+				5C050CC4286D76390037BF14 /* SummaryViewControllerKnee.swift */,
+				5C050CC6286D764B0037BF14 /* SummaryViewControllerHip.swift */,
+				5C99C63D2876F304002E38EB /* TabBarController.swift */,
 				5F982D27249121A5006534BC /* Views */,
 				DF3EC83223D65E340007EAE9 /* Main.storyboard */,
 				5FF06752243E619E0021D743 /* CameraViewController.xib */,
 				5F1EC07723EC9EA100E35618 /* SetupViewController.xib */,
 				DF3EC84423D669FD0007EAE9 /* GameViewController.xib */,
-				DF907A5524161D2A00AE0814 /* SummaryViewController.xib */,
-				DF3EC83823D65E390007EAE9 /* Assets.xcassets */,
+				DF907A5524161D2A00AE0814 /* SummaryViewController_Original.xib */,
+				5CE1C2AC286517080090A96D /* SummaryViewController2.storyboard */,
+				5CE1C2B4286520670090A96D /* SummaryViewController.storyboard */,
+				5C78374C286DB1D70017FFEA /* Assets.xcassets */,
+				5CE1C2B628652DA60090A96D /* Assets1.xcassets */,
 				DF3EC83A23D65E390007EAE9 /* LaunchScreen.storyboard */,
 				DF3EC83D23D65E390007EAE9 /* Info.plist */,
 				5F24EFD524756AD400EA0CBA /* GameBoardDetector.mlmodel */,
@@ -167,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF3EC84023D65E390007EAE9 /* Build configuration list for PBXNativeTarget "ActionAndVision" */;
 			buildPhases = (
+				8BBA5F499C6A29C67A043380 /* [CP] Check Pods Manifest.lock */,
 				DF3EC82523D65E340007EAE9 /* Sources */,
 				DF3EC82623D65E340007EAE9 /* Frameworks */,
 				DF3EC82723D65E340007EAE9 /* Resources */,
+				5C050CC3286CE07D0037BF14 /* Embed Frameworks */,
+				873EDBFA6387DFC140B99C2E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,17 +279,62 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE1C2B5286520670090A96D /* SummaryViewController.storyboard in Resources */,
 				5FF06753243E619F0021D743 /* CameraViewController.xib in Resources */,
 				DF3EC84623D669FD0007EAE9 /* GameViewController.xib in Resources */,
 				5F1EC07823EC9EA100E35618 /* SetupViewController.xib in Resources */,
+				5C78374D286DB1D70017FFEA /* Assets.xcassets in Resources */,
+				5CE1C2B728652DA60090A96D /* Assets1.xcassets in Resources */,
 				DF3EC83C23D65E390007EAE9 /* LaunchScreen.storyboard in Resources */,
-				DF3EC83923D65E390007EAE9 /* Assets.xcassets in Resources */,
+				5CE1C2AD286517080090A96D /* SummaryViewController2.storyboard in Resources */,
 				DF3EC83423D65E340007EAE9 /* Main.storyboard in Resources */,
-				DF907A5724161D2A00AE0814 /* SummaryViewController.xib in Resources */,
+				DF907A5724161D2A00AE0814 /* SummaryViewController_Original.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		873EDBFA6387DFC140B99C2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ActionAndVision/Pods-ActionAndVision-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ActionAndVision/Pods-ActionAndVision-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ActionAndVision/Pods-ActionAndVision-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BBA5F499C6A29C67A043380 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ActionAndVision-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DF3EC82523D65E340007EAE9 /* Sources */ = {
@@ -243,16 +349,20 @@
 				DF3EC83123D65E340007EAE9 /* CameraViewController.swift in Sources */,
 				5F982D2D24912A75006534BC /* JointSegmentView.swift in Sources */,
 				5F982D2924912200006534BC /* AnimatedTransitioning.swift in Sources */,
-				DF907A5624161D2A00AE0814 /* SummaryViewController.swift in Sources */,
+				DF907A5624161D2A00AE0814 /* SummaryViewController_Original.swift in Sources */,
+				5C99C63E2876F304002E38EB /* TabBarController.swift in Sources */,
 				5F982D2F24912B53006534BC /* TrajectoryView.swift in Sources */,
+				5C050CC7286D764B0037BF14 /* SummaryViewControllerHip.swift in Sources */,
 				DFC5C176249839F900392F58 /* PlayerActionClassifier.mlmodel in Sources */,
 				DF3EC82D23D65E340007EAE9 /* AppDelegate.swift in Sources */,
+				5C050CC5286D76390037BF14 /* SummaryViewControllerKnee.swift in Sources */,
 				DF3EC82F23D65E340007EAE9 /* SceneDelegate.swift in Sources */,
 				5F982D3124912CE4006534BC /* DashboardView.swift in Sources */,
 				5F24EFD624756AD400EA0CBA /* GameBoardDetector.mlmodel in Sources */,
 				DF1A92A623E7575A00A9FD49 /* Common.swift in Sources */,
 				5F982D3724912E7C006534BC /* VideoOutputViews.swift in Sources */,
 				5F982D3324912D4A006534BC /* ProgressView.swift in Sources */,
+				5CE1C2AF2865175E0090A96D /* SummaryViewController.swift in Sources */,
 				5F1EC07A23EC9F8400E35618 /* SetupViewController.swift in Sources */,
 				5F982D3524912DD2006534BC /* OverlayLabel.swift in Sources */,
 			);
@@ -404,7 +514,7 @@
 		};
 		DF3EC84123D65E390007EAE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B222C85AFC0A20F716D652A4 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 953ABCA96565E5208AB0B641 /* Pods-ActionAndVision.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -416,7 +526,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ActionAndVision${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fit-My-Bike---Uni";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
@@ -428,7 +538,7 @@
 		};
 		DF3EC84223D65E390007EAE9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B222C85AFC0A20F716D652A4 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 720533FEBB32754631A6E869 /* Pods-ActionAndVision.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -440,7 +550,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ActionAndVision${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_BUNDLE_IDENTIFIER = "Fit-My-Bike---Uni";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;

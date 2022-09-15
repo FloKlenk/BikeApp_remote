@@ -367,7 +367,6 @@ func fullBodyJoints(for observation: VNHumanBodyPoseObservation) -> (CGPoint, CG
 
     guard let identifiedPoints = try? observation.recognizedPoints(.all) else {
         return (rightAnkle, nose)
-        print("Hier")
     }
     
     for (key, point) in identifiedPoints where point.confidence > 0.1 {

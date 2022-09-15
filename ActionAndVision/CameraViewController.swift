@@ -45,15 +45,18 @@ class CameraViewController: UIViewController {
     }
     
     func setupAVSession() throws {
+        print("Weitwinkel")
+
         // Create device discovery session for a wide angle camera
         let wideAngle = AVCaptureDevice.DeviceType.builtInWideAngleCamera
         let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [wideAngle], mediaType: .video, position: .unspecified)
+        print("Weitwinkel-Eigene Kamera")
         
         // Select a video device, make an input
         guard let videoDevice = discoverySession.devices.first else {
             throw AppError.captureSessionSetup(reason: "Could not find a wide angle camera device.")
         }
-        
+
         guard let deviceInput = try? AVCaptureDeviceInput(device: videoDevice) else {
             throw AppError.captureSessionSetup(reason: "Could not create video device input.")
         }
@@ -72,6 +75,7 @@ class CameraViewController: UIViewController {
             throw AppError.captureSessionSetup(reason: "Could not add video device input to the session")
         }
         session.addInput(deviceInput)
+
         
         let dataOutput = AVCaptureVideoDataOutput()
         if session.canAddOutput(dataOutput) {
@@ -116,6 +120,7 @@ class CameraViewController: UIViewController {
     // Vision coordinates have origin at the bottom left corner and are normalized from 0 to 1 for both dimensions.
     //
     func viewRectForVisionRect(_ visionRect: CGRect) -> CGRect {
+        print("RectVisionRect")
         let flippedRect = visionRect.applying(CGAffineTransform.verticalFlip)
         let viewRect: CGRect
         if cameraFeedSession != nil {
@@ -135,6 +140,7 @@ class CameraViewController: UIViewController {
     // Vision coordinates have origin at the bottom left corner and are normalized from 0 to 1 for both dimensions.
     //
     func viewPointForVisionPoint(_ visionPoint: CGPoint) -> CGPoint {
+        print("PointVisionPoint")
         let flippedPoint = visionPoint.applying(CGAffineTransform.verticalFlip)
         let viewPoint: CGPoint
         if cameraFeedSession != nil {
@@ -158,6 +164,7 @@ class CameraViewController: UIViewController {
     }
     
     func startReadingAsset(_ asset: AVAsset) {
+        print("startReading")
         videoRenderView = VideoRenderView(frame: view.bounds)
         setupVideoOutputView(videoRenderView)
         
@@ -254,6 +261,7 @@ extension CameraViewController: GameStateChangeObserver {
         if state is GameManager.SetupCameraState {
             do {
                 if let video = gameManager.recordedVideoSource {
+                    print("Video Start")
                     startReadingAsset(video)
                 } else {
                     try setupAVSession()

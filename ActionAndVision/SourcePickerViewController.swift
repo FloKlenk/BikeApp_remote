@@ -133,6 +133,7 @@ class SourcePickerViewController: UIViewController {
     
     
     @IBAction func handleUploadVideoButton(_ sender: Any) {
+        print("HandleUploadVideoButton")
         let docPicker = UIDocumentPickerViewController(forOpeningContentTypes: [.movie], asCopy: true)
         docPicker.delegate = self
         present(docPicker, animated: true)
@@ -140,19 +141,23 @@ class SourcePickerViewController: UIViewController {
     
     @IBAction func revertToSourcePicker(_ segue: UIStoryboardSegue) {
         // This is for unwinding to this controller in storyboard.
+        print("revertToSourcePicker")
         gameManager.reset()
     }
 }
 
 extension SourcePickerViewController: UIDocumentPickerDelegate {
     func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
+        print("DocumentPickerCancelled")
         gameManager.recordedVideoSource = nil
     }
     
     func  documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+        print("DocumentPicker")
         guard let url = urls.first else {
             return
         }
+        print("AVAsset")
         gameManager.recordedVideoSource = AVAsset(url: url)
         performSegue(withIdentifier: "ShowRootControllerSegue", sender: self)
     }
