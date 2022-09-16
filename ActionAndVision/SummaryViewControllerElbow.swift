@@ -8,7 +8,7 @@
 import UIKit
 import Charts
 
-class SummaryViewControllerHip: UIViewController, ChartViewDelegate {
+class SummaryViewControllerElbow: UIViewController, ChartViewDelegate {
     var lineChart = LineChartView()
     
     override func viewDidLoad() {
