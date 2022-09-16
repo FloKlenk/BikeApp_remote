@@ -31,6 +31,10 @@ var KnieFlexion: CGFloat = 0.0
 var ArrKniewinkel = [CGFloat]()
 var stringArray = [String]()
 var string: String = ""
+var HipAngle: CGFloat = 0.0
+var ArrHipAngle = [CGFloat]()
+var ElbowAngle: CGFloat = 0.0
+var ArrElbowAngle = [CGFloat]()
 
 public var screenWidth: CGFloat {
     return UIScreen.main.bounds.width
@@ -314,6 +318,8 @@ class GameViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
             //self.playerStats.storeObservation(observation)
             //var KnieWinkel: Double
             //KnieWinkel = 10
+            
+            //MARK: KNEE ANGLE
 
                 let (rightHip, rightKnee, rightAnkle) = KneeJoints(for: observation)
                 let xDistA = (rightKnee.x - rightAnkle.x)
@@ -336,6 +342,58 @@ class GameViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
             //KnieWinkel = KnieWinkel/100
             
             KnieFlexion = 180 - KnieWinkel
+            
+            //MARK: HIP ANGLE
+            let (rightShoulder, rightHip, rightKnee) = HipJoints(for: observation)
+            let xDistA = (rightHip.x - rightKnee.x)
+            let yDistA = (rightHip.y - rightKnee.y)
+            let a = sqrt((xDistA * xDistA) + (yDistA * yDistA))
+
+            let xDistB = (rightShoulder.x - rightKnee.x)
+            let yDistB = (rightShoulder.y - rightKnee.y)
+            let b = sqrt((xDistB * xDistB) + (yDistB * yDistB))
+
+            let xDistC = (rightHip.x - rightShoulder.x)
+            let yDistC = (rightHip.y - rightShoulder.y)
+            let c = sqrt((xDistC * xDistC) + (yDistC * yDistC))
+
+            HipAngle = (((acos(((a*a)+(c*c)-(b*b))/((2*(a)*(c)))))*(180))/(3.14159))
+        // Test 6
+        print("Hip: ", HipAngle)
+
+            ArrHipAngle.append(HipAngle)
+            
+            
+            //MARK: ELBOWANGLE
+            
+            let (rightWrist, rightElbow, rightShoulder) = ElbowJoints(for: observation)
+            let xDistA = (rightElbow.x - rightShoulder.x)
+            let yDistA = (rightElbow.y - rightShoulder.y)
+            let a = sqrt((xDistA * xDistA) + (yDistA * yDistA))
+
+            let xDistB = (rightWrist.x - rightShoulder.x)
+            let yDistB = (rightWrist.y - rightShoulder.y)
+            let b = sqrt((xDistB * xDistB) + (yDistB * yDistB))
+
+            let xDistC = (rightElbow.x - rightWrist.x)
+            let yDistC = (rightElbow.y - rightWrist.y)
+            let c = sqrt((xDistC * xDistC) + (yDistC * yDistC))
+            
+            ElbowAngle = (((acos(((a*a)+(c*c)-(b*b))/((2*(a)*(c)))))*(180))/(3.14159))
+        // Test 3
+        print("Elbow: ", ElbowAngle)
+            
+            ArrElbowAngle.append(ElbowAngle)
+            
+            // Andere Methode
+            //updateKPILabels()
+            
+            
+            // WARUM NICHT?
+            self.JointAngle2Label.text = "\(KnieWinkel)°"
+            self.JointAngle4Label.text = "\(HipAngle)°"
+            self.JointAngle1Label.text = "\(ElbowAngle)°"
+            
             
             // Test 4
             print("Test Kniewinkel: ", KnieWinkel)
@@ -402,7 +460,6 @@ class GameViewController: UIViewController, AVCaptureVideoDataOutputSampleBuffer
                     return documentsDirectory
                 }
                  */
-                
             }
             
 

@@ -15,6 +15,9 @@
 		5CE1C2AF2865175E0090A96D /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1C2AE2865175E0090A96D /* SummaryViewController.swift */; };
 		5CE1C2B5286520670090A96D /* SummaryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE1C2B4286520670090A96D /* SummaryViewController.storyboard */; };
 		5CE1C2B728652DA60090A96D /* Assets1.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE1C2B628652DA60090A96D /* Assets1.xcassets */; };
+		5CE583AF28D50AEC006A713B /* SummaryViewController_Original_NeuerVersuch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CE583AE28D50AEC006A713B /* SummaryViewController_Original_NeuerVersuch.xib */; };
+		5CE583B128D5134E006A713B /* SummaryViewControllerElbow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE583B028D5134E006A713B /* SummaryViewControllerElbow.swift */; };
+		5CE583B328D52572006A713B /* SummaryViewController_Original_NeuerVersuch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE583B228D52572006A713B /* SummaryViewController_Original_NeuerVersuch.swift */; };
 		5F1EC07823EC9EA100E35618 /* SetupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F1EC07723EC9EA100E35618 /* SetupViewController.xib */; };
 		5F1EC07A23EC9F8400E35618 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1EC07923EC9F8400E35618 /* SetupViewController.swift */; };
 		5F24EFD624756AD400EA0CBA /* GameBoardDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5F24EFD524756AD400EA0CBA /* GameBoardDetector.mlmodel */; };
@@ -68,6 +71,9 @@
 		5CE1C2AE2865175E0090A96D /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		5CE1C2B4286520670090A96D /* SummaryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SummaryViewController.storyboard; sourceTree = "<group>"; };
 		5CE1C2B628652DA60090A96D /* Assets1.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets1.xcassets; path = "../../../Downloads/AppIcons-2/Assets1.xcassets"; sourceTree = "<group>"; };
+		5CE583AE28D50AEC006A713B /* SummaryViewController_Original_NeuerVersuch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryViewController_Original_NeuerVersuch.xib; sourceTree = "<group>"; };
+		5CE583B028D5134E006A713B /* SummaryViewControllerElbow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewControllerElbow.swift; sourceTree = "<group>"; };
+		5CE583B228D52572006A713B /* SummaryViewController_Original_NeuerVersuch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController_Original_NeuerVersuch.swift; sourceTree = "<group>"; };
 		5F1EC07723EC9EA100E35618 /* SetupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetupViewController.xib; sourceTree = "<group>"; };
 		5F1EC07923EC9F8400E35618 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 		5F24EFD524756AD400EA0CBA /* GameBoardDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GameBoardDetector.mlmodel; sourceTree = "<group>"; };
@@ -196,9 +202,11 @@
 				DF3EC84523D669FD0007EAE9 /* GameViewController.swift */,
 				DF1A92A523E7575A00A9FD49 /* Common.swift */,
 				DF907A5424161D2A00AE0814 /* SummaryViewController_Original.swift */,
+				5CE583B228D52572006A713B /* SummaryViewController_Original_NeuerVersuch.swift */,
 				5CE1C2AE2865175E0090A96D /* SummaryViewController.swift */,
 				5C050CC4286D76390037BF14 /* SummaryViewControllerKnee.swift */,
 				5C050CC6286D764B0037BF14 /* SummaryViewControllerHip.swift */,
+				5CE583B028D5134E006A713B /* SummaryViewControllerElbow.swift */,
 				5C99C63D2876F304002E38EB /* TabBarController.swift */,
 				5F982D27249121A5006534BC /* Views */,
 				DF3EC83223D65E340007EAE9 /* Main.storyboard */,
@@ -206,6 +214,7 @@
 				5F1EC07723EC9EA100E35618 /* SetupViewController.xib */,
 				DF3EC84423D669FD0007EAE9 /* GameViewController.xib */,
 				DF907A5524161D2A00AE0814 /* SummaryViewController_Original.xib */,
+				5CE583AE28D50AEC006A713B /* SummaryViewController_Original_NeuerVersuch.xib */,
 				5CE1C2AC286517080090A96D /* SummaryViewController2.storyboard */,
 				5CE1C2B4286520670090A96D /* SummaryViewController.storyboard */,
 				5C78374C286DB1D70017FFEA /* Assets.xcassets */,
@@ -285,6 +294,7 @@
 				5F1EC07823EC9EA100E35618 /* SetupViewController.xib in Resources */,
 				5C78374D286DB1D70017FFEA /* Assets.xcassets in Resources */,
 				5CE1C2B728652DA60090A96D /* Assets1.xcassets in Resources */,
+				5CE583AF28D50AEC006A713B /* SummaryViewController_Original_NeuerVersuch.xib in Resources */,
 				DF3EC83C23D65E390007EAE9 /* LaunchScreen.storyboard in Resources */,
 				5CE1C2AD286517080090A96D /* SummaryViewController2.storyboard in Resources */,
 				DF3EC83423D65E340007EAE9 /* Main.storyboard in Resources */,
@@ -345,6 +355,7 @@
 				5FF06755243E88EF0021D743 /* SourcePickerViewController.swift in Sources */,
 				5F982D2B2491233C006534BC /* BoundingBoxView.swift in Sources */,
 				5FD9A16923ED9DE5004A8F31 /* GameManager.swift in Sources */,
+				5CE583B128D5134E006A713B /* SummaryViewControllerElbow.swift in Sources */,
 				5F3A4A5023F2F370009E9DF6 /* RootViewController.swift in Sources */,
 				DF3EC83123D65E340007EAE9 /* CameraViewController.swift in Sources */,
 				5F982D2D24912A75006534BC /* JointSegmentView.swift in Sources */,
@@ -363,6 +374,7 @@
 				5F982D3724912E7C006534BC /* VideoOutputViews.swift in Sources */,
 				5F982D3324912D4A006534BC /* ProgressView.swift in Sources */,
 				5CE1C2AF2865175E0090A96D /* SummaryViewController.swift in Sources */,
+				5CE583B328D52572006A713B /* SummaryViewController_Original_NeuerVersuch.swift in Sources */,
 				5F1EC07A23EC9F8400E35618 /* SetupViewController.swift in Sources */,
 				5F982D3524912DD2006534BC /* OverlayLabel.swift in Sources */,
 			);

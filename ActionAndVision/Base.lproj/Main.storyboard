@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Y5-sn-rd5">
-    <device id="ipad10_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -56,11 +56,11 @@
                         <viewControllerLayoutGuide type="bottom" id="AJy-tg-SVJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fRp-Os-NH4">
-                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="HsC-A6-ZMJ">
-                                <rect key="frame" x="418.5" y="220.5" width="343" height="379.5"/>
+                                <rect key="frame" x="238.5" y="400.5" width="343" height="379.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:1mc-W9-jxl:image" translatesAutoresizingMaskIntoConstraints="NO" id="1mc-W9-jxl">
                                         <rect key="frame" x="109.5" y="56" width="124" height="124"/>
@@ -70,14 +70,14 @@
                                             <constraint firstAttribute="height" constant="124" id="sd9-Td-n3e"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action &amp; Vision" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MS9-Lf-ioO">
-                                        <rect key="frame" x="72.5" y="203" width="198" height="33"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIT MY BIKE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MS9-Lf-ioO">
+                                        <rect key="frame" x="93" y="203" width="157.5" height="33"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Developer Sample App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9c4-Wk-BFs">
-                                        <rect key="frame" x="60" y="243.5" width="223" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Florian Klenk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9c4-Wk-BFs">
+                                        <rect key="frame" x="111" y="243.5" width="121.5" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -148,11 +148,11 @@
                         <viewControllerLayoutGuide type="bottom" id="rOw-qx-MM0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="k48-GI-MB4">
-                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBa-T1-ztp">
-                                <rect key="frame" x="1114" y="34" width="50" height="50"/>
+                                <rect key="frame" x="754" y="34" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Yvi-8d-7L6"/>
                                     <constraint firstAttribute="height" constant="50" id="hGF-ee-lU9"/>
@@ -192,11 +192,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wDo-JK-MFG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ghI-B7-XBx">
-                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJS-qV-nIk">
-                                <rect key="frame" x="219.5" y="231" width="741" height="358.5"/>
+                                <rect key="frame" x="39.5" y="392" width="741" height="396.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benutzerhinweise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYs-Dp-G40">
                                         <rect key="frame" x="20" y="56" width="721" height="41"/>
@@ -231,7 +231,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Tv-LH-efO" userLabel="View2">
-                                        <rect key="frame" x="378.5" y="117.5" width="342.5" height="41.5"/>
+                                        <rect key="frame" x="378.5" y="117.5" width="342.5" height="22.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" text="2." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLd-qP-ffM">
                                                 <rect key="frame" x="0.0" y="0.0" width="18.5" height="24"/>
@@ -239,8 +239,8 @@
                                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Platziere das Spielbrett auf der rechten Seite der Kamera" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57t-oO-jGf">
-                                                <rect key="frame" x="22.5" y="5.5" width="320" height="36"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Die fahrende Person sollte möglichst mittig sein." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57t-oO-jGf">
+                                                <rect key="frame" x="22.5" y="5.5" width="320" height="17"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -257,7 +257,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MW5-1c-jwb" userLabel="View3">
-                                        <rect key="frame" x="20" y="203.5" width="342.5" height="44"/>
+                                        <rect key="frame" x="20" y="203.5" width="342.5" height="82"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" text="3." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhZ-8D-3zO">
                                                 <rect key="frame" x="0.0" y="0.0" width="18.5" height="24"/>
@@ -265,8 +265,8 @@
                                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warte, bis die App das Brett einmal erkannt hat während die Kamera stabil steht" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRX-gr-BDt">
-                                                <rect key="frame" x="22.5" y="5.5" width="320" height="38.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aufgenommen sollte direkt von der Seite, sodass das Gerät parallel zum Fahrradrahmen steht." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRX-gr-BDt">
+                                                <rect key="frame" x="22.5" y="5.5" width="320" height="76.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -283,7 +283,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFn-ZE-7Vz" userLabel="View4">
-                                        <rect key="frame" x="378.5" y="203.5" width="342.5" height="44"/>
+                                        <rect key="frame" x="378.5" y="203.5" width="342.5" height="82"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" text="4." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7k-nt-Yun">
                                                 <rect key="frame" x="0.0" y="0.0" width="19" height="24"/>
@@ -291,8 +291,9 @@
                                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Stehe links von der Kamera mit Blickrichtung zum Brett" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mb-SO-Eao">
-                                                <rect key="frame" x="23" y="5.5" width="319.5" height="36"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mb-SO-Eao">
+                                                <rect key="frame" x="23" y="5.5" width="319.5" height="74"/>
+                                                <string key="text">Lasse erst das Video durchlaufen und schaue danach die Gelenkwinkelverläufe an. Diese erreichst du über die Buttons am unteren Bildschirmrand.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -309,7 +310,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qn4-oa-kj7">
-                                        <rect key="frame" x="250.5" y="295.5" width="240" height="41"/>
+                                        <rect key="frame" x="250.5" y="333.5" width="240" height="41"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <inset key="contentEdgeInsets" minX="100" minY="10" maxX="100" maxY="10"/>
@@ -436,11 +437,11 @@
                         <viewControllerLayoutGuide type="bottom" id="z08-Ln-bqW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="szZ-pV-JTr">
-                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkC-7h-Egc">
-                                <rect key="frame" x="301" y="268" width="578" height="284"/>
+                                <rect key="frame" x="121" y="448" width="578" height="284"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKU-1G-iKv">
                                         <rect key="frame" x="20" y="20" width="244" height="244"/>
@@ -449,8 +450,8 @@
                                                 <rect key="frame" x="59" y="44" width="126" height="128"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50" scale="medium"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" text="Video hochladen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNg-H9-b3X">
-                                                <rect key="frame" x="67.5" y="181.5" width="109" height="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" misplaced="YES" text="Video hochladen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNg-H9-b3X">
+                                                <rect key="frame" x="55" y="180" width="134" height="17"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -485,8 +486,8 @@
                                                 <rect key="frame" x="58" y="89" width="128" height="83"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50" scale="medium"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" text="Live filmen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9e-fK-227">
-                                                <rect key="frame" x="87.5" y="181.5" width="69.5" height="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" misplaced="YES" text="Live filmen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9e-fK-227">
+                                                <rect key="frame" x="79" y="180" width="86" height="17"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -524,117 +525,89 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Größe in cm eingeben" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ld-DL-aXg">
-                                <rect key="frame" x="322" y="221" width="168" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="172" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8L-XR-5kM">
-                                <rect key="frame" x="567" y="261" width="217" height="21"/>
+                                <rect key="frame" x="180" y="254" width="168" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="172" minValue="130" maxValue="230" translatesAutoresizingMaskIntoConstraints="NO" id="cAd-2y-ksc">
-                                <rect key="frame" x="565" y="224" width="379" height="30"/>
+                                <rect key="frame" x="178" y="329" width="379" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="ChangeHightSlider:" destination="Jk8-Wg-m3M" eventType="valueChanged" id="4r2-9h-fAW"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ellenbogen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjt-mN-izP">
-                                <rect key="frame" x="148" y="547" width="92" height="40"/>
+                                <rect key="frame" x="158" y="843" width="92" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gelenkwinkel auswählen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yte-u0-3Ai">
-                                <rect key="frame" x="138" y="493" width="186" height="46"/>
+                                <rect key="frame" x="148" y="789" width="186" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Schulter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4g-uZ-BP1">
-                                <rect key="frame" x="148" y="595" width="92" height="40"/>
+                                <rect key="frame" x="158" y="891" width="92" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hüfte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JB9-Lt-egz">
-                                <rect key="frame" x="148" y="643" width="92" height="40"/>
+                                <rect key="frame" x="158" y="939" width="92" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Knie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faE-d5-Nau">
-                                <rect key="frame" x="148" y="691" width="92" height="40"/>
+                                <rect key="frame" x="158" y="987" width="92" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Yj-cp-2Ka">
-                                <rect key="frame" x="277" y="552" width="49" height="31"/>
+                                <rect key="frame" x="287" y="848" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="ConfirmElbow:" destination="Jk8-Wg-m3M" eventType="touchUpInside" id="c9H-Fq-WPW"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uNa-Eg-QVc">
-                                <rect key="frame" x="277" y="648" width="49" height="31"/>
+                                <rect key="frame" x="287" y="944" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="ConfirmHip:" destination="Jk8-Wg-m3M" eventType="touchUpInside" id="UWM-4T-dh9"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZDY-yx-OdT">
-                                <rect key="frame" x="277" y="696" width="49" height="31"/>
+                                <rect key="frame" x="287" y="992" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="ConfirmKnee:" destination="Jk8-Wg-m3M" eventType="touchUpInside" id="Bf7-Re-Dx0"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PV3-X7-8N3">
-                                <rect key="frame" x="277" y="600" width="49" height="31"/>
+                                <rect key="frame" x="287" y="896" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="ConfirmShoulder:" destination="Jk8-Wg-m3M" eventType="touchUpInside" id="lHf-Gz-xGR"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vierecke einblenden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nV-h5-WdB">
-                                <rect key="frame" x="886" y="506" width="155" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="172" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8L-XR-5kM">
+                                <rect key="frame" x="180" y="366" width="217" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="k0q-Oe-YxI">
-                                <rect key="frame" x="940" y="535" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="ConfirmRectangle:" destination="Jk8-Wg-m3M" eventType="touchUpInside" id="5mv-i7-PG8"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="restliche Winkel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ys0-PX-399">
-                                <rect key="frame" x="903" y="605" width="120" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kUW-OW-aPu">
-                                <rect key="frame" x="938" y="643" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="ConfirmOtherAngles:" destination="Jk8-Wg-m3M" eventType="touchUpInside" id="QCI-4g-eLe"/>
-                                </connections>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
@@ -649,8 +622,6 @@
                         <outlet property="HightSlider" destination="cAd-2y-ksc" id="DsQ-04-8WH"/>
                         <outlet property="HipSwitch" destination="uNa-Eg-QVc" id="pIk-XJ-gZU"/>
                         <outlet property="KneeSwitch" destination="ZDY-yx-OdT" id="F3f-oD-oGG"/>
-                        <outlet property="OtherAnglesSwitch" destination="kUW-OW-aPu" id="kac-p1-oS0"/>
-                        <outlet property="RectangleSwitch" destination="k0q-Oe-YxI" id="WiV-sM-Bfi"/>
                         <outlet property="ShoulderSwitch" destination="PV3-X7-8N3" id="bea-HO-CAH"/>
                     </connections>
                 </viewController>
@@ -666,15 +637,15 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-8.1355932203389827" y="1488.2926829268292"/>
+            <point key="canvasLocation" x="-8.7804878048780495" y="1487.7966101694917"/>
         </scene>
         <!--Kniewinkel-->
         <scene sceneID="afD-CY-NJs">
             <objects>
                 <navigationController title="Kniewinkel" id="uy3-Zv-t0h" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" badgeValue="Kniewinkel" id="Q2o-Da-ZX9"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="qKs-Wp-Eaf">
-                        <rect key="frame" x="0.0" y="24" width="1180" height="102"/>
+                    <tabBarItem key="tabBarItem" title="Item" badgeValue="KW" id="Q2o-Da-ZX9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qKs-Wp-Eaf">
+                        <rect key="frame" x="0.0" y="24" width="820" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -685,58 +656,58 @@
             </objects>
             <point key="canvasLocation" x="774" y="-1317"/>
         </scene>
-        <!--Linien Graph-->
+        <!--Kniewinkel-->
         <scene sceneID="3Aj-zc-BlB">
             <objects>
-                <viewController id="7Qe-p5-Mam" customClass="SummaryViewController" customModule="ActionAndVision" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7Qe-p5-Mam" customClass="SummaryViewControllerKnee" customModule="ActionAndVision" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fNL-E5-L69"/>
                         <viewControllerLayoutGuide type="bottom" id="2Fr-xp-tjA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="owb-NW-8fT">
-                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Linien Graph" id="bkf-05-ean"/>
+                    <navigationItem key="navigationItem" title="Kniewinkel" id="bkf-05-ean"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2i-zk-e3n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="774" y="-587"/>
         </scene>
-        <!--Knie-->
+        <!--Hüftwinkel-->
         <scene sceneID="6m9-0T-X1j">
             <objects>
-                <viewController id="vXZ-1H-fn1" customClass="SummaryViewControllerKnee" customModule="ActionAndVision" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-1H-fn1" customClass="SummaryViewControllerHip" customModule="ActionAndVision" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dmO-fa-ZHI"/>
                         <viewControllerLayoutGuide type="bottom" id="cEt-2k-Dfo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bfa-Ib-PLD">
-                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Knie" id="xue-MB-few"/>
+                    <navigationItem key="navigationItem" title="Hüftwinkel" id="xue-MB-few"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wx4-2x-lko" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1608" y="-587"/>
         </scene>
-        <!--Hüfte-->
+        <!--Ellbogenwinkel-->
         <scene sceneID="qee-3E-XRK">
             <objects>
-                <viewController id="4uv-zO-aYb" customClass="SummaryViewControllerHip" customModule="ActionAndVision" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4uv-zO-aYb" customClass="SummaryViewControllerElbow" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nc7-iM-yoE"/>
                         <viewControllerLayoutGuide type="bottom" id="dM9-Zu-MbN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="H0v-2Z-HGc">
-                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Hüfte" id="OqD-GX-3CQ"/>
+                    <navigationItem key="navigationItem" title="Ellbogenwinkel" id="OqD-GX-3CQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNE-z2-YjS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -746,9 +717,9 @@
         <scene sceneID="1r1-nf-Joa">
             <objects>
                 <navigationController title="Kniewinkel - live" id="raq-Jn-Qyp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" badgeValue="Kniewinkel - live" id="tPc-o9-TeQ"/>
+                    <tabBarItem key="tabBarItem" title="Item" badgeValue="HW" id="tPc-o9-TeQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="46j-9T-htK">
-                        <rect key="frame" x="0.0" y="24" width="1180" height="50"/>
+                        <rect key="frame" x="0.0" y="24" width="820" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -763,9 +734,9 @@
         <scene sceneID="iMC-Dy-TMm">
             <objects>
                 <navigationController id="CHB-y3-nun" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" badgeValue="Hüftwinkel" id="4Mk-WJ-RKn"/>
+                    <tabBarItem key="tabBarItem" title="Item" badgeValue="EW" id="4Mk-WJ-RKn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ozh-kx-efO">
-                        <rect key="frame" x="0.0" y="24" width="1180" height="50"/>
+                        <rect key="frame" x="0.0" y="24" width="820" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

@@ -35,7 +35,7 @@ class SummaryViewController: UIViewController, ChartViewDelegate {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        lineChart.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.width)
+        lineChart.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width*0.75, height: self.view.frame.size.width*0.75)
         // Eigentlich oben drüber .heigth?
         
         lineChart.center = view.center

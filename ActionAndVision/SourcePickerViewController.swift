@@ -33,33 +33,6 @@ class SourcePickerViewController: UIViewController {
     @IBOutlet weak var ShoulderSwitch: UISwitch!
     @IBOutlet weak var HipSwitch: UISwitch!
     @IBOutlet weak var KneeSwitch: UISwitch!
-    @IBOutlet weak var RectangleSwitch: UISwitch!
-    @IBOutlet weak var OtherAnglesSwitch: UISwitch!
-    
-    @IBAction func ConfirmOtherAngles(_ sender: Any) {
-        if OtherAnglesSwitch.isOn {
-            OtherAngles = true
-            OtherAnglesSwitch.setOn(true, animated: true)
-        }
-        else {
-            OtherAngles = false
-            OtherAnglesSwitch.setOn(false, animated: false)
-        }
-        print(OtherAngles)
-    }
-    
-    
-    @IBAction func ConfirmRectangle(_ sender: Any) {
-        if RectangleSwitch.isOn {
-            ShowRectangle = true
-            RectangleSwitch.setOn(true, animated: true)
-        }
-        else {
-            ShowRectangle = false
-            RectangleSwitch.setOn(false, animated: false)
-        }
-        print(ShowRectangle)
-    }
     
     @IBAction func ConfirmElbow(_ sender: Any) {
         
@@ -81,7 +54,7 @@ class SourcePickerViewController: UIViewController {
         }
         else {
             ShowShoulder = false
-            ElbowSwitch.setOn(false, animated: false)
+            ShoulderSwitch.setOn(false, animated: false)
         }
         print(ShowShoulder)
     }

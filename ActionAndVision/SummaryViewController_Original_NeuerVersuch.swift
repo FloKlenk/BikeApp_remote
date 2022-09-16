@@ -10,15 +10,15 @@ import MessageUI
 import Charts
 
 
-class SummaryViewController_Original: UIViewController {
+class SummaryViewController_Original_NeuerVersuch: UIViewController {
 
-    @IBOutlet weak var speedValue: UILabel!
-    @IBOutlet weak var angleValue1: UILabel!
-    @IBOutlet weak var scoreValue: UILabel!
+    @IBOutlet weak var MaxKnee: UILabel!
+    @IBOutlet weak var MinKnee: UILabel!
+    @IBOutlet weak var MaxHip: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
-    @IBOutlet weak var SingleThrowSpeed1: UILabel!
-    @IBOutlet weak var SingleThrowSpeed2: UILabel!
-    @IBOutlet weak var SingleThrowSpeed3: UILabel!
+    @IBOutlet weak var MinHip: UILabel!
+    @IBOutlet weak var MaxElbow: UILabel!
+    @IBOutlet weak var MinElbow: UILabel!
     
     private let gameManager = GameManager.shared
     
@@ -95,9 +95,9 @@ class SummaryViewController_Original: UIViewController {
         let sumArray = ThrowAngleArray.reduce(0, +)
         let avgArrayValue = sumArray / Double(ThrowAngleArray.count)
         // set attributed text on a UILabel
-        speedValue.text = "\(round(speedValueText * 100) / 100) km/h"
-        angleValue1.text = "\(round(avgArrayValue * 100) / 100)°"
-        scoreValue.text = "\(ThrowNumber + 1)"
+//        speedValue.text = "\(round(speedValueText * 100) / 100) km/h"
+//        angleValue1.text = "\(round(avgArrayValue * 100) / 100)°"
+//        scoreValue.text = "\(ThrowNumber + 1)"
         
         
         
